@@ -5,6 +5,10 @@ local nextPage2 =  Player.PlayerGui.ScreenGui.SpecialQuestFrame.RightBtn
 local nextPage3 = Player.PlayerGui.ScreenGui.DailyQuestFrame.RightBtn
 local previousPage = Player.PlayerGui.ScreenGui.WeeklyQuestFrame.LeftBtn
 
+repeat
+    wait()
+until Player.Character:FindFirstChild("Humanoid")
+
 for i,v in pairs(getconnections(nextPage1.MouseButton1Click)) do
     v.Function()
 end
