@@ -24,8 +24,8 @@ local Stepped = game:GetService("RunService").Stepped:Connect(
                         end
                     end
                     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, GUIDs[math.random(1,#GUIDs)].id)
-                    wait(2)
                     Stepped:Disconnect()
+                    wait(2)
                 end
             end
         end
