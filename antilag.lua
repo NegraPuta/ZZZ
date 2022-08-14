@@ -6,7 +6,7 @@ Terrain.WaterWaveSpeed = 0
 Terrain.WaterReflectance = 0
 Terrain.WaterTransparency = 0
 
-local Lighting = game:GetService("Lightning")
+local Lighting = game:GetService("Lighting")
 
 Lighting.GlobalShadows = false
 Lighting.FogEnd = math.huge
