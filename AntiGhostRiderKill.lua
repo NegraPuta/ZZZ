@@ -1,7 +1,7 @@
-while true do
-    wait()
-    if Player.Character.Humanoid.Health == 0 then
-        ServerHop()
-        break
+local stepped = game:GetService("RunService").Stepped:Connect(function()
+        if Player.Character.Humanoid.Health == 0 then
+            ServerHop()
+            stepped:Disconnect()
+        end
     end
-end
+)
