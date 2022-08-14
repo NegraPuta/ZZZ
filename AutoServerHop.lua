@@ -1,4 +1,4 @@
-function ServerHop()
+getgenv().ServerHop = function ServerHop()
 local GUIDs = {}
 local Http = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100&cursor="))
 for i = 1,5 do
