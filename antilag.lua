@@ -26,7 +26,7 @@ for i,v in pairs(game:GetDescendants()) do
 end
 
 for i,v in pairs(Lighting:GetChildren()) do
-    if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("Sky") then
+    if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
         v.Enabled = false
     end
 end
