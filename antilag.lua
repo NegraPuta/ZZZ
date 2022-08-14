@@ -18,7 +18,7 @@ for i,v in pairs(game:GetDescendants()) do
     elseif v:IsA("Decal") then
         v.Transparency = 1
     elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-        v.LifeTime = NumberRange.new(0)
+        v.Lifetime = NumberRange.new(0)
     elseif v:IsA("Explosion") then
         v.BlastPressure = 1
         v.BlastRadius = 1
