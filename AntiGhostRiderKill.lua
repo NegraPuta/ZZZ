@@ -1,4 +1,7 @@
-repeat
+while true do
     wait()
-until Player.Character.Humanoid.Health == 0
-ServerHop()
+    if Player.Character.Humanoid.Health == 0 then
+        ServerHop()
+        break
+    end
+end
