@@ -1,4 +1,6 @@
-while task.wait() do
+getgenv().antiGrabtool = true
+while getgenv().antiGrabtool do
+    task.wait()
     local player = game.Players.LocalPlayer.Character
     local part = CFrame.new(
         -265.755157, 279.427368, 1000.90588, -0.0678123757, 5.10859834e-08, -0.997698069, 3.46426288e-09, 1, 5.09683886e-08, 0.997698069, -8.63215088e-16, -0.0678123757
@@ -49,3 +51,12 @@ while task.wait() do
             end
         end
     end
+
+local m = game.Players.LocalPlayer:GetMouse()
+m.KeyDown:Connect(
+    function(k)
+        if k == "z" then
+            getgenv().antiGrabtool = false
+        end
+    end
+)
